@@ -3,13 +3,6 @@ body {
   font-family: "monospace", "Lucida Sans Unicode", "Lucida Sans";
 }
 
-.app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .button {
   width: 140px;
   height: 45px;
@@ -29,11 +22,6 @@ body {
   font-weight: 600;
 }
 
-.pad {
-  width: max-content;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 .button.cancel-btn:hover {
   background-color: #f3270b;
   box-shadow: 0px 15px 20px rgba(243, 42, 11, 0.4);
@@ -46,11 +34,4 @@ body {
   box-shadow: 0px 15px 20px rgba(11, 113, 243, 0.4);
   color: #fff;
   transform: translateY(-7px);
-}
-
-.pushup-btns {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
 }
