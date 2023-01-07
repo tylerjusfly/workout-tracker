@@ -1,13 +1,56 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 10px;
+  font-family: "monospace", "Lucida Sans Unicode", "Lucida Sans";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  width: 140px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  font-weight: 600;
+}
+
+.pad {
+  width: max-content;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.button.cancel-btn:hover {
+  background-color: #f3270b;
+  box-shadow: 0px 15px 20px rgba(243, 42, 11, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button.accept-btn:hover {
+  background-color: #0b91f3;
+  box-shadow: 0px 15px 20px rgba(11, 113, 243, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.pushup-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
