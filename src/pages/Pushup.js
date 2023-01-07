@@ -5,13 +5,14 @@ import { useTimeContext } from "../Context/useTime";
 
 const Pushup = () => {
   const [pushupCount, setPushupCount] = useState(JSON.parse(localStorage.getItem("pushup")) || 0);
-  const [isPlaying, setIsPlaying] = useState(false);
 
   const { time, interval, StartOfDay } = useTimeContext();
 
   const audioRef = createRef();
 
   useEffect(() => {
+    // document.title = "Pushups"
+
     localStorage.setItem("pushup", JSON.stringify(pushupCount));
   }, [pushupCount]);
 
@@ -31,7 +32,6 @@ const Pushup = () => {
   const bumpupCount = () => {
     setPushupCount((prevVal) => prevVal + 10);
     audioRef.current.play();
-    setIsPlaying(true);
   };
 
   const resetPushupCount = () => {

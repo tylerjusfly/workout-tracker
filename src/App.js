@@ -10,9 +10,15 @@ function App() {
     textAlign: "center",
   };
 
+  const formatMiliseconds = (time) => {
+    let formattedtime = time.toLocaleTimeString().split(" ");
+
+    return `${formattedtime[0].slice(0, -3)} ${formattedtime[1]}`;
+  };
+
   return (
     <>
-      <div style={styles}>The time is: {time.toLocaleTimeString()}</div>
+      <div style={styles}>The time is: {formatMiliseconds(time)}</div>
       <Pushup />
     </>
   );
