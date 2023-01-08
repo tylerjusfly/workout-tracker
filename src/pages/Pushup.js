@@ -6,7 +6,7 @@ import { useTimeContext } from "../Context/useTime";
 const Pushup = () => {
   const [pushupCount, setPushupCount] = useState(JSON.parse(localStorage.getItem("pushup")) || 0);
 
-  const { time, interval, StartOfDay } = useTimeContext();
+  const { time, interval } = useTimeContext();
 
   const audioRef = createRef();
 
@@ -17,15 +17,7 @@ const Pushup = () => {
   }, [pushupCount]);
 
   useEffect(() => {
-    console.log("time sets");
-
-    const timeDifference = time - StartOfDay;
-    if (timeDifference >= 86400000) {
-      // set pushup to 0
-      setPushupCount(0);
-      clearInterval(interval);
-    }
-
+    // will be resetting state if day is over
     return () => clearInterval(interval);
   }, [time]);
 

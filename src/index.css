@@ -1,17 +1,21 @@
+html {
+  background: url("./assets/images/weights.avif") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
 body {
   margin: 0px;
   font-family: "monospace", "Lucida Sans Unicode", "Lucida Sans";
-  background-image: url("./assets/images/weights.avif");
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
   body {
     background-image: url("./assets/images/pullups.avif");
   }
-}
+} */
 
 .button {
   width: 140px;
