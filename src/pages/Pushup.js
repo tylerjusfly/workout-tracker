@@ -40,7 +40,7 @@ const Pushup = () => {
 
   return (
     <div className="pushup">
-      <h3>{pushupCount} Push Up Done</h3>
+      <h3 style={{ color: "aliceblue" }}>{pushupCount} Push Up Done</h3>
       <div className="pushup-btns">
         <button className="button accept-btn" onClick={bumpupCount}>
           Bump Up
