@@ -1,4 +1,3 @@
-// import { useState, useEffect } from "react";
 import Nav from "./components/Nav";
 import Pushup from "./pages/Pushup";
 
