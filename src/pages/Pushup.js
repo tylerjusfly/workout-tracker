@@ -12,6 +12,22 @@ const Pushup = () => {
 
   useEffect(() => {
     // document.title = "Pushups"
+    // const value = [
+    //   { date: "01/15/2023", count: 2 },
+    //   { date: "02/15/2023", count: 10 },
+    //   { date: "04/15/2023", count: 4 },
+    //   { date: "07/30/2023", count: 15 },
+    //   { date: "08/13/2023", count: 15 },
+    //   { date: "08/11/2023", count: 10 },
+    //   { date: "11/2/2023", count: 22 },
+    //   { date: "11/3/2023", count: 27 },
+    // ];
+    let a = [];
+
+    a = JSON.parse(localStorage.getItem("activites")) || [];
+
+    a.push({ date: new Date(), count: pushupCount });
+    localStorage.setItem("activites", JSON.stringify(a));
 
     localStorage.setItem("pushup", JSON.stringify(pushupCount));
   }, [pushupCount]);

@@ -1,0 +1,13 @@
+.Activity--map {
+  border: 3px solid white;
+  border-radius: 10px;
+  width: fit-content;
+  margin-top: 15px;
+  padding: 25px;
+}
+
+.activity-span {
+  color: red;
+  text-align: center;
+  font-weight: 700;
+}
